@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Штурмовик</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(20, 20, 20, 0.8);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 68, 68, 0.2);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 68, 68, 0.3);
+}
+
+.header h1 {
+    color: #ff4444;
+    font-size: 32px;
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(255, 68, 68, 0.5);
+    margin-bottom: 8px;
+}
+
+.header .subtitle {
+    color: #888;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffaa00;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.section-title svg {
+    width: 20px;
+    height: 20px;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.stat-item {
+    background: rgba(30, 30, 30, 0.6);
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #44ff44;
+}
+
+.stat-label {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    color: #44ff44;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ability-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ability-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(30, 30, 30, 0.6);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.ability-item.buff {
+    border-left: 3px solid #00ff00;
+}
+
+.ability-item.debuff {
+    border-left: 3px solid #ff4444;
+}
+
+.ability-icon {
+    flex-shrink: 0;
+}
+
+.ability-text {
+    flex: 1;
+}
+
+.ability-text.buff {
+    color: #00ff00;
+}
+
+.ability-text.debuff {
+    color: #ff4444;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #666;
+    font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>ШТУРМОВИК</h1>
+        <div class="subtitle">Assault Class</div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+            </svg>
+            Характеристики
+        </div>
+        <div class="stat-grid">
+            <div class="stat-item">
+                <div class="stat-label">Здоровье</div>
+                <div class="stat-value">100 HP</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Броня</div>
+                <div class="stat-value">10 AP</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Уровень</div>
+                <div class="stat-value">140 LVL</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Цена</div>
+                <div class="stat-value">15,000</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00ff00" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+            </svg>
+            Баффы
+        </div>
+        <div class="ability-list">
+            <div class="ability-item buff">
+                <div class="ability-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00ff00" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div class="ability-text buff">Отдача оружия: -40%</div>
+            </div>
+            <div class="ability-item buff">
+                <div class="ability-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00ff00" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"/>
+                        <circle cx="12" cy="12" r="6"/>
+                        <circle cx="12" cy="12" r="2"/>
+                    </svg>
+                </div>
+                <div class="ability-text buff">Разброс пуль: -40%</div>
+            </div>
+            <div class="ability-item buff">
+                <div class="ability-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#00ff00" stroke-width="2">
+                        <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                    </svg>
+                </div>
+                <div class="ability-text buff">Скорость: +3%</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ff4444" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            Дебаффы
+        </div>
+        <div class="ability-list">
+            <div class="ability-item debuff">
+                <div class="ability-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ff4444" stroke-width="2">
+                        <path d="M12 19V5M5 12l7-7 7 7"/>
+                    </svg>
+                </div>
+                <div class="ability-text debuff">Гравитация: +5% (прыгает ниже)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Удачной игры, Игрок!
+    </div>
+</div>
+
+</body>
+</html>
