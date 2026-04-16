@@ -1,153 +1,56 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Штурмовик</title>
-<style>
-body {
-    background-color: #0a0a0a;
-    color: #e0e0e0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 15px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.header {
-    text-align: center;
-    padding: 15px 0;
-    border-bottom: 2px solid #ff4444;
-}
-
-.header h1 {
-    color: #ff4444;
-    font-size: 28px;
-    margin: 0 0 5px 0;
-}
-
-.subtitle {
-    color: #888;
-    font-size: 12px;
-}
-
-.section {
-    margin: 20px 0;
-    padding: 15px;
-    background-color: #1a1a1a;
-    border-left: 3px solid #ffaa00;
-}
-
-.section-title {
-    color: #ffaa00;
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.stat-row td {
-    padding: 8px;
-    background-color: #141414;
-    border: 1px solid #2a2a2a;
-}
-
-.stat-label {
-    color: #888;
-    font-size: 11px;
-    width: 50%;
-}
-
-.stat-value {
-    color: #44ff44;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.ability {
-    padding: 10px;
-    margin: 5px 0;
-    background-color: #141414;
-}
-
-.ability.buff {
-    border-left: 3px solid #00ff00;
-}
-
-.ability.debuff {
-    border-left: 3px solid #ff4444;
-}
-
-.buff-text {
-    color: #00ff00;
-    font-size: 13px;
-}
-
-.debuff-text {
-    color: #ff4444;
-    font-size: 13px;
-}
-
-.footer {
-    text-align: center;
-    margin-top: 20px;
-    padding-top: 15px;
-    border-top: 1px solid #333;
-    color: #666;
-    font-size: 11px;
-}
-</style>
+<title>Shturmovic</title>
 </head>
-<body>
+<body bgcolor="#0a0a0a" text="#e0e0e0">
 
-<div class="header">
-    <h1>ШТУРМОВИК</h1>
-    <div class="subtitle">ASSAULT CLASS</div>
-</div>
+<center>
+<h1><font color="#ff4444">SHTURMOVIC</font></h1>
+<font color="#888888" size="2">ASSAULT CLASS</font>
+</center>
 
-<div class="section">
-    <div class="section-title">ХАРАКТЕРИСТИКИ</div>
-    <table class="stat-row">
-        <tr>
-            <td class="stat-label">Здоровье</td>
-            <td class="stat-value">100 HP</td>
-            <td class="stat-label">Броня</td>
-            <td class="stat-value">10 AP</td>
-        </tr>
-        <tr>
-            <td class="stat-label">Уровень</td>
-            <td class="stat-value">140 LVL</td>
-            <td class="stat-label">Цена</td>
-            <td class="stat-value">15,000</td>
-        </tr>
-    </table>
-</div>
+<hr color="#ff4444">
 
-<div class="section">
-    <div class="section-title">БАФФЫ</div>
-    <div class="ability buff">
-        <div class="buff-text">+ Отдача оружия: -40%</div>
-    </div>
-    <div class="ability buff">
-        <div class="buff-text">+ Разброс пуль: -40%</div>
-    </div>
-    <div class="ability buff">
-        <div class="buff-text">+ Скорость: +3%</div>
-    </div>
-</div>
+<p><b><font color="#ffaa00" size="4">HARAKTERISTIKI:</font></b></p>
 
-<div class="section">
-    <div class="section-title">ДЕБАФФЫ</div>
-    <div class="ability debuff">
-        <div class="debuff-text">- Гравитация: +5% (прыгает ниже)</div>
-    </div>
-</div>
+<table border="1" bordercolor="#333333" cellpadding="8" width="100%">
+<tr>
+<td><font color="#888888">Zdorovie</font></td>
+<td><font color="#44ff44"><b>100 HP</b></font></td>
+<td><font color="#888888">Bronya</font></td>
+<td><font color="#44ff44"><b>10 AP</b></font></td>
+</tr>
+<tr>
+<td><font color="#888888">Uroven</font></td>
+<td><font color="#44ff44"><b>140 LVL</b></font></td>
+<td><font color="#888888">Cena</font></td>
+<td><font color="#44ff44"><b>15,000</b></font></td>
+</tr>
+</table>
 
-<div class="footer">
-    Удачной игры, Игрок!
-</div>
+<br>
+
+<p><b><font color="#ffaa00" size="4">BAFFY:</font></b></p>
+
+<table border="0" cellpadding="5" width="100%">
+<tr><td bgcolor="#1a1a1a"><font color="#00ff00">+ Otdacha oruzhiya: -40%</font></td></tr>
+<tr><td bgcolor="#1a1a1a"><font color="#00ff00">+ Razbros pul: -40%</font></td></tr>
+<tr><td bgcolor="#1a1a1a"><font color="#00ff00">+ Skorost: +3%</font></td></tr>
+</table>
+
+<br>
+
+<p><b><font color="#ffaa00" size="4">DEBAFFY:</font></b></p>
+
+<table border="0" cellpadding="5" width="100%">
+<tr><td bgcolor="#1a1a1a"><font color="#ff4444">- Gravitaciya: +5% (prygaet nizhe)</font></td></tr>
+</table>
+
+<br><br>
+
+<center>
+<font color="#666666" size="2">Udachnoy igry, Igrok!</font>
+</center>
 
 </body>
 </html>
