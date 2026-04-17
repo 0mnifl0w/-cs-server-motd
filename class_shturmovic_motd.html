@@ -1,56 +1,104 @@
+<!doctype html>
 <html>
 <head>
+<meta charset="utf-8">
 <title>Shturmovic</title>
+<style>
+body {
+background-color: #1E1E1E;
+color: #FFFFFF;
+font-family: Arial;
+font-size: 13px;
+margin: 0;
+padding: 20px;
+}
+table {
+width: 100%;
+border-collapse: collapse;
+}
+.header {
+text-align: center;
+padding: 20px;
+}
+.header h1 {
+color: #ff4444;
+font-size: 32px;
+margin: 0;
+}
+.section {
+margin: 20px 0;
+padding: 15px;
+background-color: #2a2a2a;
+}
+.section-title {
+color: #ffaa00;
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+td {
+padding: 10px;
+border: 1px solid #444;
+}
+.label {
+color: #888;
+}
+.value {
+color: #44ff44;
+font-weight: bold;
+}
+.buff {
+color: #00ff00;
+padding: 8px;
+background-color: #1a3a1a;
+margin: 5px 0;
+}
+.debuff {
+color: #ff4444;
+padding: 8px;
+background-color: #3a1a1a;
+margin: 5px 0;
+}
+</style>
 </head>
-<body bgcolor="#0a0a0a" text="#e0e0e0">
+<body>
 
-<center>
-<h1><font color="#ff4444">SHTURMOVIC</font></h1>
-<font color="#888888" size="2">ASSAULT CLASS</font>
-</center>
+<div class="header">
+<h1>SHTURMOVIC</h1>
+<p style="color:#888;">ASSAULT CLASS</p>
+</div>
 
-<hr color="#ff4444">
-
-<p><b><font color="#ffaa00" size="4">HARAKTERISTIKI:</font></b></p>
-
-<table border="1" bordercolor="#333333" cellpadding="8" width="100%">
+<div class="section">
+<div class="section-title">HARAKTERISTIKI</div>
+<table>
 <tr>
-<td><font color="#888888">Zdorovie</font></td>
-<td><font color="#44ff44"><b>100 HP</b></font></td>
-<td><font color="#888888">Bronya</font></td>
-<td><font color="#44ff44"><b>10 AP</b></font></td>
+<td class="label">Zdorovie</td>
+<td class="value">100 HP</td>
+<td class="label">Bronya</td>
+<td class="value">10 AP</td>
 </tr>
 <tr>
-<td><font color="#888888">Uroven</font></td>
-<td><font color="#44ff44"><b>140 LVL</b></font></td>
-<td><font color="#888888">Cena</font></td>
-<td><font color="#44ff44"><b>15,000</b></font></td>
+<td class="label">Uroven</td>
+<td class="value">140 LVL</td>
+<td class="label">Cena</td>
+<td class="value">15,000</td>
 </tr>
 </table>
+</div>
 
-<br>
+<div class="section">
+<div class="section-title">BAFFY</div>
+<div class="buff">+ Otdacha oruzhiya: -40%</div>
+<div class="buff">+ Razbros pul: -40%</div>
+<div class="buff">+ Skorost: +3%</div>
+</div>
 
-<p><b><font color="#ffaa00" size="4">BAFFY:</font></b></p>
+<div class="section">
+<div class="section-title">DEBAFFY</div>
+<div class="debuff">- Gravitaciya: +5% (prygaet nizhe)</div>
+</div>
 
-<table border="0" cellpadding="5" width="100%">
-<tr><td bgcolor="#1a1a1a"><font color="#00ff00">+ Otdacha oruzhiya: -40%</font></td></tr>
-<tr><td bgcolor="#1a1a1a"><font color="#00ff00">+ Razbros pul: -40%</font></td></tr>
-<tr><td bgcolor="#1a1a1a"><font color="#00ff00">+ Skorost: +3%</font></td></tr>
-</table>
-
-<br>
-
-<p><b><font color="#ffaa00" size="4">DEBAFFY:</font></b></p>
-
-<table border="0" cellpadding="5" width="100%">
-<tr><td bgcolor="#1a1a1a"><font color="#ff4444">- Gravitaciya: +5% (prygaet nizhe)</font></td></tr>
-</table>
-
-<br><br>
-
-<center>
-<font color="#666666" size="2">Udachnoy igry, Igrok!</font>
-</center>
+<p style="text-align:center; color:#666; margin-top:30px;">Udachnoy igry, Igrok!</p>
 
 </body>
 </html>
